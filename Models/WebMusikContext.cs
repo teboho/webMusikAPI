@@ -2,9 +2,9 @@
 
 namespace webMusikAPI.Models
 {
-    public sealed class TestContext : DbContext
+    public sealed class WebMusikContext : DbContext
     {
-        public TestContext(DbContextOptions<TestContext> options)
+        public WebMusikContext(DbContextOptions<WebMusikContext> options)
             : base(options)
         { }
         public DbSet<Comment> Comment { get; set; }

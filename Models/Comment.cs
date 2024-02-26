@@ -8,8 +8,9 @@ namespace webMusikAPI.Models
     {
         [Key]
         public int Id { get; set; }
+        public string TrackId { get; set; }
         public string CommentText { get; set; }
         public string UserId { get; set; }
-        public SqlDateTime Posted { get; set; }
+        public DateTime Posted { get; set; }
     }
 }
